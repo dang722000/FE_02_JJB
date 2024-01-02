@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>배경을 깔아보자</title>
+    <style>
+        div{
+            width: 300px;
+            height: 300px;
+            padding: 20px;
+            border: 20px double green;
+
+            /* 백그라운드 색상 background-color: yellowgreen; */
+            background-clip: border-box;
+
+            background-image: url(../images/배경.png);
+            background-size: 200px 200px;
+            background-repeat: no-repeat;
+            /* 
+            repeat-x 가로로 이미지 반복
+            repeat-y 세로로 이미지 반복
+            */
+            background-origin: border-box;
+            /*
+            ackground-origin 이미지 시작위치 지정        
+            */
+            background-position: 100px 50px;
+            /* 
+            접미사는 top botton left right center등 를 쓸 수 있다(조합도 가능 ex_left center)
+            100px 50px의 의미는 x축으로 100px이동 y축으로 50px이동
+            */
+            
+
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

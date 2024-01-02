@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>텍스트 꾸미기</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Diphylleia&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: 'Diphylleia', monospace;
+            /* 위 경우 Diphylleia(구글폰트를 링크 가져옴 link태그 참고)폰트가 없는경우
+             monospace(기본폰트)폰트를 사용한다 라는 의미의 태그  */
+        }
+         html{
+            font-size: 40px;
+         }
+         body{
+            font-size: 20px;
+            /* 기본이 16px임,
+            32px의 경우 h1과 같은 크기임 */
+         }
+        #first{
+            font-size: 2em;
+            /* em단위는 자신포함된 부모요소(head,body 등등)의 글자크기를 배수로 계산
+               rem단위는 자신이 포한된 루트요소(html)의 글자크기를 배수로 계산   */
+            font-weight: 500;
+            /* font-weigh는 글자 굵기를 지정 범위는 100~900이다 */
+            line-height: 100px;
+            /* line-height는 행의 간격을 지정함 */
+            text-align: justify;
+            /* text-align는 정렬방법이다 속성은 left,right,center,justify(양끝정렬) */
+
+        }
+    </style>
+</head>
+<body>
+    <p id="first">에스프레소와 물을 섞으면 아메리카노가 됩니다.</p>
+    <p id="second">에스프레소와 물을 섞으면 아메리카노가 됩니다.</p>
+</body>
+</html>

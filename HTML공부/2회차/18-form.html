@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>문서기본구조</title>
+</head>
+<body>
+    <header>
+        <h1>설문조사 양식</h1>
+        <p>모든 항목에 빠짐없이 체크해주세요.</p>
+    </header>
+    <hr>
+    <main>
+    <form>
+        <fieldset>
+            <legend>개인정보</legend>
+            <label for="name">이름</label>
+            <input 
+            type="text" 
+            id="name" placeholder="본명을 입력하세요"
+            name="name">
+            <label for="email">이메일</label>
+            <input 
+            type="email" 
+            id="email" placeholder="메일 주소를 쓰세요"
+            name="email">
+        </fieldset>
+        <fieldset>
+            <legend>설문</legend>
+
+            <p>연령대가 어떻게 되시나요?</p>
+            <input type="radio" id="teen" name="age">
+            <label for="teen">10대</label>
+            <input type="radio" id="twenty" name="age">
+            <label for="twenty">20대</label>
+            <input type="radio" id="thirty" name="age">
+            <label for="thirty">30대</label>
+            <input type="radio" id="fourty" name="age">
+            <label for="fourty">40대</label>
+            <input type="radio" id="fifty" name="age">
+            <label for="fifty">50대</label>
+            <input type="radio" id="other" name="age">
+            <label for="other">그 외</label>
+<!--여기서 input코드의 type속성을 radio로 설정하면 checkbox속성과는 다르게 중복해서
+    선택할 수 없는 동그란 선택원이 만들어지는데 이 부분에서 다른 라벨들을 name으로 묶지 않으면
+    중복해서 선택 할 수있게 되므로 꼭 name속성으로 묶어주어야 한다 (중복불가)-->
+            <p>학원 선택 시 그 기준은 어떻게 되시나요?</p>
+            <input type="checkbox" id="position" naem="academy">
+            <label for="position">위치</label>
+            <input type="checkbox" id="price" naem="academy">
+            <label for="price">학원비</label>
+            <input type="checkbox" id="teacher" naem="academy">
+            <label for="teacher">강사</label>
+            <input type="checkbox" id="infra" naem="academy">
+            <label for="infra">시설</label>
+
+
+        </fieldset>
+        <fieldset>
+            <legend>기타 의견</legend>
+            <textarea rows="3" cols="30" name="commend"></textarea>
+            </textarea>
+        </fieldset>
+        <input type="submit">
+
+    </form>
+    </main>
+    <hr>
+    <footer>
+        <p>입력하느라 수고하셨습니다.</p>
+    </footer>
+</body>
+</html>

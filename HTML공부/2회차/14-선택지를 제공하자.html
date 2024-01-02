@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+    <title>선택지를 제공해보자</title>
+    </head>
+    <body>
+        <h1>input이외에 입력태그들</h1>
+        <ul>
+            <li>select 코드 - option을 추가해서 사용</li>
+            <p> value 코드로 태그해서 나중에 이 부분만을 수정할떄 용이하게</p>
+            <p> selected 코드로 기본적으로 어떤 값을 선택할지 </p>
+            <p> multiple 코드를 추가하면 여러게가 보이고 size코드를 더 추가하면 몇개 가보일지 설정가능</p>
+            <select multiple size="2">
+                <option value="coffee">커피</option>
+                <option value="coke">콜라</option>
+                <option value="juice" selected>쥬스</option>
+                <option value="water">생수</option>
+            </select>
+            <li>textarea 코드를 사용하면 주관식 택스트박스가 들어간다</li>
+            <p>cols 코드를 추가해 가로로 글자수 제한을 설정하고</p>
+            <p>rows 코드를 추가해서 세로로 글자수 제한을 설정함</p>
+            <p>하지만 textarea 코드는 cols나 rows를 추가하지않고도 사용가능하면 사용자로 하여금 크기도 조절이 가능함</p>
+            <h2>기타 음료를 원한다면 자유롭게 써주세요</h2>
+            <textarea cols="30" rows="10"></textarea>
+            <li>progress코드는 사용자가 입력하는코드는 아니지만 작업의 진척도를 표현하는 코드입니다</li>
+            <progress></progress>
+            <p>max코드를 추가해 총 진척도를</p>
+            <P>value코드를 추가해 현재 진착도를 표시가능함</P>
+            <progress max="100" value="60"></progress>
+            <li>button 코드를 이용하면 버튼이 생긴다 두가지 방법이 있는데</li>
+            <h2>용무가 있으시면 출해주세요</h2>
+            <p>button 코드를 사용하는방법이 있고</p>
+            <button>호출</button>
+            <p>input코드에 type을 botten코드로 지정해 사용할수 있고 버튼속 텍스느틑 value코드를 사용해 지정 할 수 있다 </p>
+            <input type="button" value="버튼~">
+
+            <p>히든테그 하나를 더 배워보자</p>
+            <p>fieldset 코드는 박스형태로 묶어서 가독성있게 만드는 효과가있다</p>
+            <p>legend 코드를 추가하면 묶인 박스의 이름을 지정 할 수 있다</p>
+            <fieldset>
+                <legend>음료주문</legend>
+                <h2>음료를 고르세요</h2>
+                    <select multiple size="2">
+                    <option value="coffee">커피</option>
+                    <option value="coke">콜라</option>
+                    <option value="juice" selected>쥬스</option>
+                    <option value="water">생수</option>
+                </select>
+                <h2>기타 음료를 원한다면 자유롭게 써주세요</h2>
+                <textarea cols="30" rows="10"></textarea>
+            </fieldset>
+        </ul>
+    </body>
+</html>

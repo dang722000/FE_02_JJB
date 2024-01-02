@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>챌린지 04 - 회원가입만들기</title>
+</head>
+
+<body>
+    <header>
+        <h1>회원가입</h1>
+    </header>
+    
+    <main>
+        <form>
+            <fieldset>
+                <legend>필수 입력 사항</legend>
+                    <ul>
+                        <li>
+                            <label for="name"><strong>이 름 : </strong></label>
+                            <input type="text" id="name" name="name">
+                        </li>
+                        <li>
+                            <label for="id"><strong>아이디 : </strong></label>
+                            <input type="text" placeholder="6자 이상 20자 미만 공백없이" id="id" name="id">
+                        </li>
+                        <li>
+                            <label for="password"><strong>비밀번호 : </strong></label>
+                            <input type="password" placeholder="대소문자로 입력해주세요" id="password" name="password">
+                        </li>
+                        <li>
+                            <label for="email"><strong>이메일 : </strong></label>
+                            <input type="email" id="email" name="email">
+                        </li>
+                        <li>
+                            <label for="phonenumber"><strong>휴대폰 : </strong></label>
+                            <input type="number" id="phonenumber" name="phonenumber">
+                        </li>
+                        <li>
+                            <label for="place"><strong>지역 : </strong></label>
+                            <select size="1">
+                                <option selected>지역</option>
+                                <option value="seoul">서울</option>
+                                <option value="my">우리집</option>
+                                <option value="your">너희집</option>
+                                <option value="dog">개집</option>
+                            </select>
+                        </li>
+                    </ul>
+            </fieldset>
+            
+            <br>
+            <hr>
+            
+            <fieldset>
+                <legend>선택 입력 사항</legend>
+                    <ul>
+                        <li>
+                            <label for="hobby"><strong>취미</strong></label>
+                        </li>
+                        <input type="checkbox" id="coding" name="coding">
+                        <label for="coding">코딩</label>
+                        <input type="checkbox" id="exercise" name="exercise">
+                        <label for="exercise">운동</label>
+                        <input type="checkbox" id="breath" name="breath">
+                        <label for="breath">숨쉬기</label>
+                        <input type="checkbox" id="trip" name="trip">
+                        <label for="trip">여행</label>
+                        <input type="checkbox" id="sleep" name="sleep">
+                        <label for="sleep">잠자기</label>
+                        <input type="checkbox" id="book" name="book">
+                        <label for="book">독서</label>
+                        <input type="checkbox" id="netflix" name="netflix">
+                        <label for="netflix">넷플시청</label>
+                        <li>
+                            <label for="sex"><strong>성별</strong></label>
+                        </li>
+                        <input type="radio" id="male" name="sex">
+                        <label for="male">남</label>
+                        <input type="radio" id="female" name="sex">
+                        <label for="female">여</label>
+                        <input type="radio" id="none" name="sex">
+                        <label for="none">비밀</label>
+                    </ul>
+            </fieldset>            
+        </form>
+    </main>
+    <footer>
+                        
+        <br>
+        <hr>
+
+            <input type="submit" value="가입하기">
+            <input type="submit" value="취소">
+        
+        <hr>
+        <span>&copy; JB</span>
+    </footer>
+
+</body>
+</html>

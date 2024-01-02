@@ -1,0 +1,27 @@
+*{
+    text-align: center;
+}
+
+html{
+    background-color: #90b999;
+}
+
+body{
+    width: 720px;
+    margin: auto; 
+    /* margin태그의 auto속성은 너비에서 남는 여백을 동등하게 분배해줌 */
+}
+
+h1{
+    font-size: 50px;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+}
+
+p{
+    font-size: 1.2em;
+}

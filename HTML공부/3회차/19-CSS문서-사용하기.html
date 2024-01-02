@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS문서 사용하기</title>
+    
+    <style>
+        /* 
+        인라인 스타일은 우선적으로 적용된다 
+        인라인 스타일이 아닌경우, 나중에 쓰여진 선언문이 적용된다
+        */
+        p{
+            color: blue;
+        }
+    </style>
+
+    <link href="19-CSS문서-사용하기.css" rel="stylesheet">
+
+    <!-- 
+        지금은 link로 연결해준 스타일시트가 나중에 쓰여졌기때문에 보라색으로 색깔이 바뀌었다 
+     -->
+
+</head>
+<body>
+
+    <p style="color: red;">스타일 적용 실험 : 색깔만 바꿔보자</p>
+    <p>스타일 적용 실험 : 색깔만 바꿔보자</p>
+    <p>스타일 적용 실험 : 색깔만 바꿔보자</p>
+</body>
+</html>
