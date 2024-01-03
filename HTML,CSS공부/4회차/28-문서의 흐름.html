@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>문서의 흐름</title>
+    <style>
+        .frog{
+            height: 500px;
+            border: 1px solid black;
+        }
+
+        #first{
+            float: right;
+        }
+
+        #second{
+            float: left;
+        }
+
+        p{
+            clear: both;
+        }
+        /* clear태그는 float를 위해서만 존재함 clear태그가 적용되면 float의 효과를 무마시켜버림 */
+    </style>
+</head>
+<body>
+    <div class="frog">
+        <img id="first"
+        src="../images/frog.webp" width="160">
+        <img id="second"
+        src="../images/frog.webp" width="160">
+        <p>
+            개구리의 눈에는 순막이라는 투명한 막이 있다. 
+            물속에서 눈을 보호하는 기능을 하며, 눈 밑에서 위로 닫힌다
+        </p>
+    </div>
+</body>
+</html>

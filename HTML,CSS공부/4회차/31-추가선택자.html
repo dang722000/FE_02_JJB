@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>선택자 더 알아보기</title>
+    <style>
+        /* [속성명] */
+        /*
+        기호와 함께 사용하는 속성 선택자 
+        * : 값의 포함 여부
+        ^ : 값의 시작 여부
+        $ : 값의 끝 여부 
+        */
+        [width ^="1"]{
+            border: 5px dashed red;
+        }
+        [width *="2"]{
+            border: 5px dashed black;
+        }
+
+        body em{
+            color: blue;
+        }
+        #frog + p{
+            /* +는 인접형제 선택자에 관한 부분만 적용이된다 */
+            color: blueviolet;
+        }
+        #frog ~ p{
+            /* +는 인접형제 선택자에 관한 부분만 적용이된다 
+            형제선택자는 뒤에있는 형제 선택자에만 적용된다*/
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <img src="../images/frog.webp" width="200" alt="개구리">
+    <img src="../images/frog.webp" width="100">
+    <img src="../images/frog.webp" width="100" id="frog">
+    <p>개구리의 눈에는 순막이라는 투명한 막이 있다.</p>
+    <p>물속에서 눈을 보호하는 기능을 하며.</p>
+    <p>눈 밑에서 <em>위로</em> 닫힌다</p>
+    <p>정말 대단한 개구리입니다.</p>
+</body>
+</html>

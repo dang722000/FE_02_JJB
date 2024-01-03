@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            color: black;
+            background-color: orange;
+        }
+        .rel{
+            /* relative요소는 문서의 흐름에 맞춰배치된 자리를 기준으로 요소를 이동시킴 */
+            background-color: red;
+            position: relative;
+            top: 50px;
+            left: 50px;
+        }
+            
+        .abs{
+            /* absolute요소는 position 속성을 가진요소를 기준으로 위치를 이동한다.(position이 기본값) 
+            단, 상위 요소중에 position요소가 없다면 그냥 화면을 기준으로 이동한다.  */
+            position: absolute;
+            right: 50px;
+            top: 50px;
+        }
+
+        .scroll{
+            height: 2000px;
+        }
+        .fixed{
+            /* fixed요소는 화면을 기준으로 요소의 위치를 고정함
+            fixed요소의 컨텐츠는 어떤 상황에서도 움직이지않음 */
+            position: fixed;
+            right: 50px;
+            bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="abs">1</div>
+    <div class="rel">2</div>
+    <div class="scroll">3</div>
+    <div class="fixed">4</div>
+</body>
+</html>

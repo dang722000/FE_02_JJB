@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>의사 클래스 & 의사 요소</title>
+    <style>
+        .menu{
+            padding: 10px;
+            border-bottom: 1px solid black;
+        }
+        .menu > li{
+            display: inline-block;
+            text-align: center;
+        }
+        li > a{
+            display: inline-block;
+            width: 150px;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        a:hover{
+            /* 마우스를 얹어놓았을때 적용 */
+            color: white;
+            background-color: gray;
+        }
+        a:active{
+            /* 마우스를 클릭했을때 적용 */
+            color: white;
+            background-color: black;
+        }
+        
+        li:nth-child(2n-1){
+            /* n번째 형제요소에 적용
+            n이라는 미지수를 이용한 다양한 활용이가능 함 */
+            font-size: 30px;
+        }
+
+        a::first-letter{
+            color: aqua;
+        }
+
+        a::after{
+            content: "보기";
+            font-size: 20px;
+            color: rgb(84, 148, 25);
+        }
+
+    </style>
+</head>
+<body>
+    <ul class="menu">
+        <li><a href="#">사전</a></li>
+        <li><a href="#">뉴스</a></li>
+        <li><a href="#">증권</a></li>
+        <li><a href="#">지도</a></li>
+    </ul>
+</body>
+</html>
