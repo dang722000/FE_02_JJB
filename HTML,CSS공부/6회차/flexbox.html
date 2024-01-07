@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>플렉스박스 레이아웃</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+        }
+        ul{
+            display: flex;
+            padding: 0;
+            list-style-type: none;
+            height: 200px;
+            
+            /* 
+            flex-direction: row;
+            flex-wrap: wrap; 
+            아래와 같이 단축가능
+            flex-flow: row wrap;
+            */
+           
+            /*x축기준
+             justify-content: flex-start; (기본) 
+             justify-content: flex-end; (끝에 붙임)
+             justify-content: center; (중앙에둠)
+             justify-content: space-between; (양끝 정렬 후 여백크기 똑같이)
+             justify-content: space-around; (개별 컨텐츠가 가지고있는 양끝영역을 똑같이)
+             justify-content: space-evenly; (모든 여백 크기를 똑같이) 
+             */
+            align-items: center;
+            /* y축기준
+            align-items: stretch; (기본)
+            align-items: flex-start (시작점_젤위에 있다)
+            align-items: flex-end (끝지점_바닥에 있다)
+            align-items: center; (중앙에둠)
+            
+            */
+        }
+        li{
+            background-color: yellow;
+        }
+        li:nth-child(2n){
+            background-color: gray;
+        }
+        li:nth-child(2){
+            /* flex-grow - 성장할 수 있는 정도 */
+            /* flex-grow: 1;  */
+            /* flex-shrink - 찌그러질 수 있는 정도 */
+            /* flex-shrink: 2; */
+        }
+        li:nth-child(4){
+            /* flex-grow: 3; */
+
+        }
+        li:nth-child(2n-1){
+            /* flex-basis - 콘텐츠가 가지는 초기값을 설정 */
+            flex-basis: 100px;
+            /* flex: grow shrink basis - flex단축속성임 */
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h2>집앞 강가에서 목격한 동물들</h2>
+    <ul>
+        <!-- 
+            플렉스 아이템은 플렉스 컨테이너로서의 역할은 하지 않는다
+            즉, 현재 플렉스 아이템속성이 적용된 <li>들 하위에 <p>라는 태그가 들어간다면
+            <p>태그는 플렉스 아이템속성이 적용되지 않는다 -> <p>태그도 개별적으로 적용해줘야한다
+     -->
+        <li>물오리</li>
+        <li>물까치</li>
+        <li>고라니</li>
+        <li>누룩뱀</li>
+        <li>너구리</li>
+
+    </ul>
+</body>
+</html>
