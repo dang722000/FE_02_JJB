@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>챌린지 09 - 간단한 소개 화면 만들기</title>
+    <style>
+
+        body{
+            background-color: rgb(235, 180, 97);
+            box-sizing: border-box;
+        }
+        .content{
+            padding: 20px 20px auto;
+            width: 100%;
+            display: flex;
+            
+        }
+        .yellow{
+            padding: 20px;
+            width: 220px;
+            height: 290px;
+            background-color: rgb(243, 218, 74);
+            border-radius: 30px 0px 0px 30px;
+            text-align: center;
+            overflow: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .white{
+            padding: 20px;
+            width: 70%;
+            height: 290px;
+            border-radius: 0px 30px 30px 0px;
+            background-color: white;
+            overflow: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            
+        }
+        .content div{
+            font-size: 20px;
+            color: green;
+
+        }
+        .content div:nth-child(1){
+            margin-bottom: 0px;
+            margin-top: 0px;
+            font-size: 30px;
+            color: black;
+        }
+        .content div:nth-child(2){
+            font-size: 35px;
+            color: black;
+        }
+        .content div:nth-child(3){
+            color: black;
+        }
+        </style>
+</head>
+<body>
+    <div class="content">
+        <div class="yellow">
+            <div>😄</div>
+            <div class="content__title">Fun Sidebar</div>
+            <div>Enjoy your time here!</div>
+            <div class="yellow__list"></div>
+                <div>🎮 Play a Game</div>
+                <div>🎵 Listen to Music</div>
+                <div>🎥 Watch a Movie</div>
+        </div>
+        <div class="white">
+            <span></span>
+            <div>즐거운 초격차 교실!</div>
+            <div>Welcome to the fun zone of OZ! Have a good time!</div>
+            <div class="white__list"></div>
+                <div>😄 Tell a Joke</div>
+                <div>🖊 Drow Something</div>
+                <div>☕ Grab a coffee</div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
