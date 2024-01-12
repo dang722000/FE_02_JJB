@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>챌린지 10 - 눈사람만들기</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        html, body{
+            height: 100%;
+            background-color: skyblue;
+        }
+        body,.all,.hat,.snowman,.head,.body,.Tail{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .all{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .hat{
+            flex-direction: column;
+        }
+        .hat01{
+            position: relative;
+            width: 35px;
+            height: 35px;
+            background-color: #333333;
+        }
+        .hat02{
+            position: absolute;
+            width: 60px;
+            height: 10px;
+            background-color: #333333;
+            top: 110px;
+            z-index: 2;
+        }
+        .snowman{
+            flex-direction: column;
+
+        }
+        .head,.body,.Tail{
+            position: relative;
+            background-color: white;
+            border-radius: 50%;
+        }
+        .head{
+            width: 50px;
+            height: 50px;
+        }
+        .eye01,.eye02{
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background-color: black;
+        }
+        .eye01{
+            position: absolute;
+            left: 10px;
+            top: 40%;
+        }
+        .eye02{
+            position: absolute;
+            left: 20px;
+            top: 40%;
+        }
+        .mouth{
+            position: absolute;
+            width: 20px;
+            height: 10px;
+            border-radius: 0 0 7px 7px;
+            background-color: black;
+            left: 10px;
+            top: 65%;
+        }
+        .body{
+            position: relative;
+            width: 75px;
+            height: 75px;
+            z-index: 2;
+        }
+        .Button01,.Button02,.Button03{
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background-color: black;
+        }
+        .Button01{
+            position: absolute;
+            left: 30px;
+            top: 20%;
+        }
+        .Button02{
+            position: absolute;
+            left: 30px;
+        }
+        .Button03{
+            position: absolute;
+            left: 30px;
+            top: 70%;
+        }
+        .arm01,.arm02{
+            position: absolute;
+            width: 110px;
+            height: 5px;
+            background-color:saddlebrown;
+            z-index: 1;
+            top: 200px;
+        }
+        .arm02{
+            left: 565px;
+            transform: rotate(-30deg);            
+        }
+        .arm01{
+            left: 500px;
+            transform: rotate(30deg);}
+        .Tail{
+            width: 100px;
+            height: 100px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="all">
+        <div class="hat">
+            <div class="hat01"></div>
+            <div class="hat02"></div>
+        </div>
+        <div class="snowman">
+            <div class="head">
+                <div class="eye01"></div>
+                <div class="eye02"></div>
+                <div class="mouth"></div>
+            </div>
+            <div class="arm">
+                <div class="arm01"></div>
+                <div class="arm02"></div>
+            </div>
+            <div class="body">
+                <div class="Button01"></div>
+                <div class="Button02"></div>
+                <div class="Button03"></div>
+            </div>
+            <div class="Tail"></div>
+        </div>
+    </div>
+</body>
+</html>
