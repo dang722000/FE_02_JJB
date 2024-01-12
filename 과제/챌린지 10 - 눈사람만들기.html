@@ -34,16 +34,14 @@
             background-color: #333333;
         }
         .hat02{
-            position: absolute;
+            position: relative;
             width: 60px;
             height: 10px;
             background-color: #333333;
-            top: 110px;
             z-index: 2;
         }
         .snowman{
             flex-direction: column;
-
         }
         .head,.body,.Tail{
             position: relative;
@@ -79,6 +77,9 @@
             left: 10px;
             top: 65%;
         }
+        .main{
+            position: relative;
+        }
         .body{
             position: relative;
             width: 75px;
@@ -108,19 +109,20 @@
         }
         .arm01,.arm02{
             position: absolute;
-            width: 110px;
+            width: 80px;
             height: 5px;
             background-color:saddlebrown;
             z-index: 1;
-            top: 200px;
+            top: 40%;
         }
         .arm02{
-            left: 565px;
-            transform: rotate(-30deg);            
+            left: 25px;
+            transform: rotate(-30deg);     
         }
         .arm01{
-            left: 500px;
-            transform: rotate(30deg);}
+            left: -28px;
+            transform: rotate(30deg);
+        }
         .Tail{
             width: 100px;
             height: 100px;
@@ -141,14 +143,16 @@
                 <div class="eye02"></div>
                 <div class="mouth"></div>
             </div>
-            <div class="arm">
-                <div class="arm01"></div>
-                <div class="arm02"></div>
-            </div>
-            <div class="body">
-                <div class="Button01"></div>
-                <div class="Button02"></div>
-                <div class="Button03"></div>
+            <div class="main">
+                <div class="arm">
+                    <div class="arm01"></div>
+                    <div class="arm02"></div>
+                </div>
+                <div class="body">
+                    <div class="Button01"></div>
+                    <div class="Button02"></div>
+                    <div class="Button03"></div>
+                </div>
             </div>
             <div class="Tail"></div>
         </div>
