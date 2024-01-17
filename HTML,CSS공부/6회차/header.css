@@ -16,6 +16,7 @@ header.header{
     justify-content: space-between;
 }
 .header-content__logo{
+    position: relative;
     color: rgb(199, 163, 64);
     font-size: 2rem;
     font-weight: 900;
